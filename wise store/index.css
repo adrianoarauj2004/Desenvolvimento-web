@@ -1,0 +1,663 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  margin: 0;
+  width: 100%;
+}
+
+.imgwise {
+  text-align: center;
+  justify-content: center;
+  padding-left: 0;
+  padding-top: 25px;
+  padding-bottom: 0;
+  padding-right: 0;
+}
+
+header {
+  width: 100vw;
+  height: 130px;
+  background-color: black;
+  padding: 0;
+  text-align: center;
+  margin: 0;
+
+}
+
+.search-box {
+  position: absolute;
+  top: 4%;
+  left: 3%;
+  float: left;
+  padding: 10px;
+  background-color: aliceblue;
+  height: 20px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans&display=swap%27%29%3B);
+@import url(https://fonts.cdnfonts.com/css/bodidota);
+
+.search-txt {
+  border: none;
+  background: none;
+  outline: none;
+  padding: 0;
+  color: black;
+  font-size: 16px;
+  line-height: 40px;
+  font-family: 'Open Sans';
+  width: 0;
+  transition: .5s;
+}
+
+
+
+.search-botton {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-box:hover>.search-txt {
+  width: 240px;
+  padding: 0 6px;
+}
+
+.button1 {
+  position: absolute;
+  left: 85%;
+  top: 4%;
+  cursor: pointer;
+  font-weight: 700;
+  font-family: Helvetica, "sans-serif";
+  transition: all .2s;
+  padding: 10px 20px;
+  border-radius: 100px;
+  background: #fff;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+
+.button1:hover {
+  background: white;
+}
+
+.button1>svg {
+  width: 34px;
+  margin-left: 10px;
+  transition: transform .3s ease-in-out;
+}
+
+.button1:hover svg {
+  transform: translateX(5px);
+}
+
+.button1:active {
+  transform: scale(0.95);
+}
+
+main {
+  box-sizing: border-box;
+  width: 100vw;
+  height: 1750px;
+  background-color: white;
+  text-align: center;
+  padding: 0;
+  align-items: center;
+}
+
+.menud {
+  background-color: white;
+  font-family: 'Caxton LT Book';
+  font-weight: bold; 
+  font-size: 18px;
+  padding: 0;
+}
+
+.menud li {
+  display: inline-block;
+  font-family: 'Caxton LT Book';
+}
+
+.menud li a {
+  color: black;
+  text-decoration: none;
+  padding: 15px;
+  display: inline-block;
+  font-family: 'Caxton LT Book';
+  border-radius: 100px;
+  border: none;
+}
+
+.menud li a:hover {
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+.dropdown-menu {
+  position: fixed;
+  display: none;
+  border: none;
+
+}
+
+.dropdown-menu a {
+  display: block;
+  color: black;
+  border: none;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  border: 0px;
+}
+
+.card1 {
+  width: 200px;
+  height: 310px;
+  background: white;
+  margin-top: 30px;
+  margin-left: 430px;
+  position: absolute;
+  border: 10px black;
+  background: #fff;
+  border: 3px solid #000;
+  border-radius: 0;
+  box-shadow: 15px 15px 0 -2.5px black, 15px 15px 0 0 #000;
+  font-family: 'Cracker State';
+  font-size: 20px;
+  padding: 0;
+}
+
+.bt1 {
+  border: none;
+  outline: none;
+  background-color: black;
+  padding: 15px 25px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 5px;
+  transition: all ease 0.1s;
+  box-shadow: 0px 5px 0px 0px gray;
+}
+
+.bt1:active {
+  transform: translateY(5px);
+  box-shadow: 0px 0px 0px 0px #a29bfe;
+}
+
+.card2 {
+  width: 200px;
+  height: 310px;
+  background: white;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-left: 860px;
+  position: absolute;
+  background: #fff;
+  border: 3px solid #000;
+  border-radius: 0;
+  box-shadow: 15px 15px 0 -2.5px black, 15px 15px 0 0 #000;
+  font-family: 'Cracker State';
+  font-size: 20px;
+  padding: 0;
+
+}
+
+.bt2 {
+  border: none;
+  outline: none;
+  background-color: black;
+  padding: 15px 25px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 5px;
+  transition: all ease 0.1s;
+  box-shadow: 0px 5px 0px 0px gray;
+}
+
+.bt2:active {
+  transform: translateY(5px);
+  box-shadow: 0px 0px 0px 0px #a29bfe;
+}
+
+
+.card3 {
+  width: 200px;
+  height: 310px;
+  background: white;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-left: 1285px;
+  position: absolute;
+  background: #fff;
+  border: 3px solid #000;
+  border-radius: 0;
+  box-shadow: 15px 15px 0 -2.5px black, 15px 15px 0 0 #000;
+  font-family: 'Cracker State';
+  font-size: 20px;
+  padding: 0;
+}
+
+.bt3 {
+  border: none;
+  outline: none;
+  background-color: black;
+  padding: 15px 25px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 5px;
+  transition: all ease 0.1s;
+  box-shadow: 0px 5px 0px 0px gray;
+}
+
+.bt3:active {
+  transform: translateY(5px);
+  box-shadow: 0px 0px 0px 0px #a29bfe;
+}
+
+
+.card4 {
+  width: 200px;
+  height: 310px;
+  background: white;
+  justify-content: center;
+  align-items: center;
+  margin-top: 390px;
+  margin-left: 430px;
+  position: absolute;
+  background: #fff;
+  border: 3px solid #000;
+  border-radius: 0;
+  box-shadow: 15px 15px 0 -2.5px black, 15px 15px 0 0 #000;
+  font-family: 'Cracker State';
+  font-size: 20px;
+  padding: 0;
+
+}
+
+.bt4 {
+  border: none;
+  outline: none;
+  background-color: black;
+  padding: 15px 25px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 5px;
+  transition: all ease 0.1s;
+  box-shadow: 0px 5px 0px 0px gray;
+}
+
+.bt4:active {
+  transform: translateY(5px);
+  box-shadow: 0px 0px 0px 0px #a29bfe;
+}
+
+
+.card5 {
+  width: 200px;
+  height: 310px;
+  background: white;
+  justify-content: center;
+  align-items: center;
+  margin-top: 390px;
+  margin-left: 860px;
+  position: absolute;
+  background: #fff;
+  border: 3px solid #000;
+  border-radius: 0;
+  box-shadow: 15px 15px 0 -2.5px black, 15px 15px 0 0 #000;
+  font-family: 'Cracker State';
+  font-size: 20px;
+  padding: 0;
+}
+
+.bt5 {
+  border: none;
+  outline: none;
+  background-color: black;
+  padding: 15px 25px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 5px;
+  transition: all ease 0.1s;
+  box-shadow: 0px 5px 0px 0px gray;
+}
+
+.bt5:active {
+  transform: translateY(5px);
+  box-shadow: 0px 0px 0px 0px #a29bfe;
+}
+
+
+.card6 {
+  width: 200px;
+  height: 310px;
+  background: white;
+  justify-content: center;
+  align-items: center;
+  margin-top: 390px;
+  margin-left: 1285px;
+  position: absolute;
+  background: #fff;
+  border: 3px solid #000;
+  border-radius: 0;
+  box-shadow: 15px 15px 0 -2.5px black, 15px 15px 0 0 #000;
+  font-family: 'Cracker State';
+  font-size: 20px;
+  padding: 0;
+}
+
+.bt6 {
+  border: none;
+  outline: none;
+  background-color: black;
+  padding: 15px 25px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 5px;
+  transition: all ease 0.1s;
+  box-shadow: 0px 5px 0px 0px gray;
+}
+
+.bt6:active {
+  transform: translateY(5px);
+  box-shadow: 0px 0px 0px 0px #a29bfe;
+}
+
+
+.topico {
+  text-align: center;
+  margin-top: 55px;
+  font-family: 'Beast Wars';
+}
+
+
+
+.topico2 {
+  text-align: center;
+  margin-top: 770px;
+  font-family: 'Beast Wars';
+  color: #000;
+
+}
+
+.card7 {
+  width: 200px;
+  height: 310px;
+  background: white;
+  margin-top: 30px;
+  margin-left: 430px;
+  position: absolute;
+  border: 10px black;
+  background: #fff;
+  border: 3px solid #000;
+  border-radius: 0;
+  box-shadow: 15px 15px 0 -2.5px black, 15px 15px 0 0 #000;
+  font-family: 'Cracker State';
+  font-size: 20px;
+  padding: 0;
+}
+
+.bt7 {
+  border: none;
+  outline: none;
+  background-color: black;
+  padding: 15px 25px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 5px;
+  transition: all ease 0.1s;
+  box-shadow: 0px 5px 0px 0px gray;
+}
+
+.bt7:active {
+  transform: translateY(5px);
+  box-shadow: 0px 0px 0px 0px #a29bfe;
+}
+
+.card8 {
+  width: 200px;
+  height: 310px;
+  background: white;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-left: 860px;
+  position: absolute;
+  background: #fff;
+  border: 3px solid #000;
+  border-radius: 0;
+  box-shadow: 15px 15px 0 -2.5px black, 15px 15px 0 0 #000;
+  font-family: 'Cracker State';
+  font-size: 20px;
+  padding: 0;
+}
+
+.bt8 {
+  border: none;
+  outline: none;
+  background-color: black;
+  padding: 15px 25px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 5px;
+  transition: all ease 0.1s;
+  box-shadow: 0px 5px 0px 0px gray;
+}
+
+.bt8:active {
+  transform: translateY(5px);
+  box-shadow: 0px 0px 0px 0px #a29bfe;
+}
+
+.card9 {
+  width: 200px;
+  height: 310px;
+  background: white;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-left: 1285px;
+  position: absolute;
+  background: #fff;
+  border: 3px solid #000;
+  border-radius: 0;
+  box-shadow: 15px 15px 0 -2.5px black, 15px 15px 0 0 #000;
+  font-family: 'Cracker State';
+  font-size: 20px;
+  padding: 0;
+}
+
+.bt9 {
+  border: none;
+  outline: none;
+  background-color: black;
+  padding: 15px 25px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 5px;
+  transition: all ease 0.1s;
+  box-shadow: 0px 5px 0px 0px gray;
+}
+
+.bt9:active {
+  transform: translateY(5px);
+  box-shadow: 0px 0px 0px 0px #a29bfe;
+}
+
+.card10 {
+  width: 200px;
+  height: 310px;
+  background: white;
+  justify-content: center;
+  align-items: center;
+  margin-top: 390px;
+  margin-left: 430px;
+  position: absolute;
+  background: #fff;
+  border: 3px solid #000;
+  border-radius: 0;
+  box-shadow: 15px 15px 0 -2.5px black, 15px 15px 0 0 #000;
+  font-family: 'Cracker State';
+  font-size: 20px;
+  padding: 0;
+
+}
+
+.bt10 {
+  border: none;
+  outline: none;
+  background-color: black;
+  padding: 15px 25px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 5px;
+  transition: all ease 0.1s;
+  box-shadow: 0px 5px 0px 0px gray;
+}
+
+.bt10:active {
+  transform: translateY(5px);
+  box-shadow: 0px 0px 0px 0px #a29bfe;
+}
+
+.card11 {
+  width: 200px;
+  height: 310px;
+  background: white;
+  justify-content: center;
+  align-items: center;
+  margin-top: 390px;
+  margin-left: 860px;
+  position: absolute;
+  background: #fff;
+  border: 3px solid #000;
+  border-radius: 0;
+  box-shadow: 15px 15px 0 -2.5px black, 15px 15px 0 0 #000;
+  font-family: 'Cracker State';
+  font-size: 20px;
+  padding: 0;
+}
+
+.bt11 {
+  border: none;
+  outline: none;
+  background-color: black;
+  padding: 15px 25px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 5px;
+  transition: all ease 0.1s;
+  box-shadow: 0px 5px 0px 0px gray;
+}
+
+.bt11:active {
+  transform: translateY(5px);
+  box-shadow: 0px 0px 0px 0px #a29bfe;
+}
+
+.card12 {
+  width: 200px;
+  height: 310px;
+  background: white;
+  justify-content: center;
+  align-items: center;
+  margin-top: 390px;
+  margin-left: 1285px;
+  position: absolute;
+  background: #fff;
+  border: 3px solid #000;
+  border-radius: 0;
+  box-shadow: 15px 15px 0 -2.5px black, 15px 15px 0 0 #000;
+  font-family: 'Cracker State';
+  font-size: 20px;
+  padding: 0;
+}
+
+.bt12 {
+  border: none;
+  outline: none;
+  background-color: black;
+  padding: 15px 25px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 5px;
+  transition: all ease 0.1s;
+  box-shadow: 0px 5px 0px 0px gray;
+}
+
+.bt12:active {
+  transform: translateY(5px);
+  box-shadow: 0px 0px 0px 0px #a29bfe;
+}
+
+footer {
+  width: 100vw;
+  height: 80px;
+  background-color: black;
+  padding: 0;
+  text-align: center;
+
+}
+
+.imgwise2 {
+  text-align: center;
+  justify-content: center;
+
+  padding: 0;
+}
+
+.footer2 {
+  width: 100vw;
+  height: 140px;
+  background-color: #363636;
+  padding: 0;
+  text-align: center;
+
+}
+
+.agrsite {
+  font-family: 'Cracker State';
+  font-size: 50px;
+}
+
+.visinsta {
+  font-family: 'Cracker State';
+  font-size: 30px;
+}
+
+.instagram {
+  font-family: 'Cracker State';
+  font-size: 30px;
+}
+
